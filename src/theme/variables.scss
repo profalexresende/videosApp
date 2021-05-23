@@ -82,8 +82,16 @@
   --ion-color-laranja-contrast-rgb: 0,0,0;
   --ion-color-laranja-shade: #d87504;
   --ion-color-laranja-tint: #f7911d;
-}
 
+ /** rosa **/
+  --ion-color-rosa: #d50744;
+  --ion-color-rosa-rgb: 213,7,68;
+  --ion-color-rosa-contrast: #ffffff;
+  --ion-color-rosa-contrast-rgb: 255,255,255;
+  --ion-color-rosa-shade: #bb063c;
+  --ion-color-rosa-tint: #d92057;
+}
+/**Laranja**/
 .ion-color-laranja {
   --ion-color-base: var(--ion-color-laranja);
   --ion-color-base-rgb: var(--ion-color-laranja-rgb);
@@ -91,5 +99,15 @@
   --ion-color-contrast-rgb: var(--ion-color-laranja-contrast-rgb);
   --ion-color-shade: var(--ion-color-laranja-shade);
   --ion-color-tint: var(--ion-color-laranja-tint);
+}
+
+/**Rosa**/
+.ion-color-rosa {
+  --ion-color-base: var(--ion-color-rosa);
+  --ion-color-base-rgb: var(--ion-color-rosa-rgb);
+  --ion-color-contrast: var(--ion-color-rosa-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-rosa-contrast-rgb);
+  --ion-color-shade: var(--ion-color-rosa-shade);
+  --ion-color-tint: var(--ion-color-rosa-tint);
 }
 
