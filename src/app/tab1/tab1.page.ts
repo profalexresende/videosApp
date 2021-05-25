@@ -1,3 +1,4 @@
+import { IFilme } from './../models/IFilme.model';
 import { Component } from '@angular/core';
 import { AlertController } from '@ionic/angular';
 import { ToastController } from '@ionic/angular';
@@ -9,7 +10,37 @@ import { ToastController } from '@ionic/angular';
 })
 export class Tab1Page {
 
-  constructor(public alertController: AlertController, public toastController: ToastController) {}
+  titulo = 'Vídeos';
+
+  listaVideos: IFilme[] = [
+    {
+      nome: 'Mortal Kombat (2021)',
+      lancamento: '15/04/2021',
+      duracao: '1h50m',
+      classificacao: 76,
+      cartaz: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/w8BVC3qrCWCiTHRz4Rft12dtQF0.jpg',
+      generos: ['Ação', 'Fantasia', 'Aventura']
+    },
+    {
+      nome: 'Vingadores: Ultimato (2019)',
+      lancamento: '25/04/2019 (BR)',
+      duracao: '3h01m',
+      classificacao: 83,
+      cartaz: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/q6725aR8Zs4IwGMXzZT8aC8lh41.jpg',
+      generos: ['Aventura', 'Ficção científica', 'Ação']
+    },
+    {
+      nome: 'De Volta para o Futuro (1985)',
+      lancamento: '25/12/1985 (BR)',
+      duracao: '1h 56m',
+      classificacao: 80,
+      cartaz: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/i996T0lI1fGtFEowiH3V6eZthL0.jpg',
+      generos: ['Aventura', 'Comédia', 'Ficção científica', 'Família']
+    }
+  ];
+
+
+  constructor(public alertController: AlertController, public toastController: ToastController) { }
 
   async exibirAlertaFavorito() {
     const alert = await this.alertController.create({
@@ -39,7 +70,7 @@ export class Tab1Page {
     const toast = await this.toastController.create({
       message: 'Filme adicionado aos favoritos...',
       duration: 2000,
-      color:'success'
+      color: 'success'
     });
     toast.present();
   }
