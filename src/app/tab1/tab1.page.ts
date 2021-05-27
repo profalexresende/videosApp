@@ -36,11 +36,29 @@ export class Tab1Page {
     {
       nome: 'De Volta para o Futuro (1985)',
       lancamento: '25/12/1985 (BR)',
-      duracao: '1h 56m',
+      duracao: '1h56m',
       classificacao: 80,
       cartaz: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/i996T0lI1fGtFEowiH3V6eZthL0.jpg',
       generos: ['Aventura', 'Comédia', 'Ficção científica', 'Família'],
       pagina: '/de-volta-futuro'
+    },
+    {
+      nome: 'Shrek (2001)',
+      lancamento: '22/06/2001',
+      duracao: '1h30m',
+      classificacao: 77,
+      cartaz: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/iB64vpL3dIObOtMZgX3RqdVdQDc.jpg',
+      generos: ['Animação', 'Comédia', 'Fantasia', 'Aventura'],
+      pagina: ''
+    },
+    {
+      nome: 'Ghost: Do Outro Lado da Vida (1990)',
+      lancamento: '01/11/1990',
+      duracao: '2h09m',
+      classificacao: 72,
+      cartaz: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/4xENTjpUhi6yQrcpvejVZuN39M2.jpg',
+      generos: ['Fantasia', 'Drama', 'Thriller', 'Mistério','Romance'],
+      pagina: ''
     }
   ];
 
